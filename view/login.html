@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../js/login_validation.js"></script>
+    <title>Login</title>
+</head>
+
+<body>
+    <table border="0" width="100%">
+        <tr>
+            <td align="center" width="550px">
+                <h2><img src="../assets/logo.png" width="40px" height="60px" alt="">School Management System</h2>
+            </td>
+            <td width="400px"> </td>
+            <td align="center"><a href="../view/home.php">Home</a> | <a href="../view/login.html">Login</a> | <a href="../view/registrationT.html">Registration</a></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td height="550px" align="center">
+                <p id="mytext"></p>
+                <form method="POST" action="../controller/student_login.php" onsubmit="return validateForm();">
+                    <fieldset>
+                        <legend><b><h3>LOG IN</h3></b></legend>
+                        <table>
+                            <tr>
+                                <td>ID No</td>
+                                <td>: <input type="text" name="id" id="id"></td>
+                                <br><span id="msg1"> </span>
+                            </tr>
+                            <tr>
+                                <td>Password</td>
+                                <td>: <input type="password" name="pass" id="pass"></td>
+                                <br><span id="msg2"> </span>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <hr>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td colspan="2">
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" align="center">
+                                    <input type="submit" name="submit" value="Log In" style="border-color: rgb(98, 177, 33); padding: 5px 110px; ">
+                                </td>
+                            </tr>
+
+
+                        </table>
+                    </fieldset>
+                </form>
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" align="center"></td>
+        </tr>
+    </table>
+</body>
+
+</html>
